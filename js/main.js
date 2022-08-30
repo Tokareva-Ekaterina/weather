@@ -29,7 +29,7 @@ Number.prototype.pad = function (size) {
 }
 
 function getHoursString(dateTime) {
-    let date = new Date(dateTime);
+    let date = new Date(dateTime.replace(" ", "T"));
     let hours = date.getHours().pad();
     return hours;
 }
