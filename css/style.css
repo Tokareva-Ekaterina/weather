@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    color: #F2F2F2;
+}
+
+.wrapper {
+    background: linear-gradient(360deg, #3594BF 0%, rgba(255, 255, 255, 0) 100%), #53A6CB;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 10px 30px;
+}
+
+.night{
+    background: linear-gradient(360deg, #55707E 0%, rgba(255, 255, 255, 0) 100%), #042232;
+}
+
+.inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.current {
+    margin-bottom: 40px;
+}
+
+.current__city {
+    font-size: 60px;
+    line-height: 82px;
+}
+
+.current__description {
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+.current__temperature {
+    font-size: 80px;
+    line-height: 90px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.forecast__item {}
+
+.forecast__time {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.forecast__icon {
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    background-size: 100%;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.icon__01d, .icon__01n {
+    background-image: url('../images/01.png');
+}
+
+.icon__02d, .icon__02n {
+    background-image: url('../images/02.png');
+}
+
+.icon__03d, .icon__03n {
+    background-image: url('../images/03.png');
+}
+
+.icon__04d, .icon__04n {
+    background-image: url('../images/04.png');
+}
+
+.icon__09d, .icon__09n {
+    background-image: url('../images/09.png');
+}
+
+.icon__10d, .icon__10n {
+    background-image: url('../images/10.png');
+}
+
+.icon__11d, .icon__11n {
+    background-image: url('../images/11.png');
+}
+
+.icon__13d, .icon__13n {
+    background-image: url('../images/13.png');
+}
+
+.icon__50d, .icon__50n {
+    background-image: url('../images/50.png');
+}
+
+.forecast__temperature {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.details {}
+
+.details__row {
+    display: flex;
+}
+
+.details__row:not(:last-child){
+    margin-bottom: 40px;
+}
+
+.details__item {
+    flex: 1;
+    text-align: left;
+}
+
+.details__name {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.details__value {
+    font-size: 30px;
+    line-height: 35px;
+}
